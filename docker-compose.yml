@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  video_editor:
+    build: .
+    container_name: auto_video_edit
+    volumes:
+      - ./input:/app/input  # Pasta para vídeos de entrada
+      - ./output:/app/output  # Pasta para vídeos editados
+      - ./main.py:/app/main.py  # Script principal
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["python", "main.py"]

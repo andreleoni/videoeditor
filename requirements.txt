@@ -1,0 +1,8 @@
+whisper
+ffmpeg-python
+numpy
+opencv-python-headless
+openai-whisper
+moviepy
+numpy
+torch
